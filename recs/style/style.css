@@ -1,0 +1,309 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ * Copyright (c) 2012-2013 Thibaut Courouble
+ * http://www.cssflow.com
+ *
+ * Licensed under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Edited by FanfictionBot
+ */
+
+html {
+  background: #f7f7f7;
+}
+
+body {
+  padding-top: 2em;
+  font: 10px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
+
+input {
+  font-size: 2em;
+  color: #555860;
+}
+
+.search {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.search input {
+  height: 2.5em;
+  width: 100%;
+  padding: 0 1em 0 2em;
+  border: 0.1em solid;
+  border-color: #66b1ee;
+  border-radius: 0.3em;
+  background: white url("../img/search.png") 0.4em center no-repeat;
+  background-size: 1.5em;
+  padding-left: 2.5em;
+  outline: 0;
+  box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 2px rgba(85, 168, 236, 0.9);
+  box-shadow: inset 0 1px #e5e7ed, 0 1px #fcfcfc;
+}
+
+.search input:valid + .search-ac {
+  display: block;
+}
+
+.search-ac {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 3em;
+  right: 0;
+  z-index: 10;
+  background: #fdfdfd;
+  border: 0.1em solid;
+  border-color: #cbcfe2 #c8cee7 #c4c7d7;
+  border-radius: 0.3em;
+  font-size: 2em;
+  margin-bottom: 4em;
+   
+  -webkit-box-shadow: 0 0em 0.3em rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0em 0.3em rgba(0, 0, 0, 0.1);
+}
+
+.search-ac:hover {
+  display: block;
+}
+.search-ac li {
+  display: block;
+}
+.search-ac li:first-child {
+  margin-top: -0.1em;
+}
+.search-ac li:first-child:before,
+.search-ac li:first-child:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  border: 5px outset transparent;
+}
+.search-ac li:first-child:before {
+  border-bottom: 5px solid #c4c7d7;
+  top: -11px;
+}
+.search-ac li:first-child:after {
+  border-bottom: 5px solid #fdfdfd;
+  top: -10px;
+}
+.search-ac li:first-child:hover:before,
+.search-ac li:first-child:hover:after {
+  display: none;
+}
+.search-ac li:last-child {
+  margin-bottom: -1px;
+}
+
+.search-ac p {
+  text-align: center;
+}
+
+.search-ac a,
+p {
+  display: block;
+  position: relative;
+  margin: 0 -1px;
+  padding: 0.3em 0.6em 0.2em 0.6em;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 0 1px white;
+  border: 1px solid transparent;
+}
+
+.search-ac a span,
+p {
+  color: grey;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.search-ac a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -9px;
+  width: 18px;
+  height: 18px;
+}
+
+.search-ac a:hover,
+a:hover span {
+  color: white;
+  text-shadow: 0 -1px rgba(48, 37, 37, 0.3);
+  background: #338cdf;
+  border-color: #2380dd #2179d5 #1a60aa;
+}
+
+:-moz-placeholder {
+  color: #a7aabc;
+  font-weight: 200;
+}
+
+::-webkit-input-placeholder {
+  color: #a7aabc;
+  font-weight: 200;
+}
+
+::-webkit-search-decoration,
+::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.lt-ie9 .search input {
+  line-height: 26px;
+}
+
+@media only screen and (max-device-width: 767px) {
+  body {
+    font-size: 20px;
+  }
+
+  .search {
+    width: 95%;
+  }
+}
