@@ -196,7 +196,7 @@ input {
   border-radius: 0.3em;
   font-size: 2em;
   margin-bottom: 4em;
-   
+
   -webkit-box-shadow: 0 0em 0.3em rgba(0, 0, 0, 0.1);
   box-shadow: 0 0em 0.3em rgba(0, 0, 0, 0.1);
 }
@@ -259,6 +259,10 @@ p {
   color: grey;
   font-weight: 300;
   font-size: 0.8em;
+}
+
+.search-ac a span.score {
+  font-weight: 700;
 }
 
 .search-ac a:before {
